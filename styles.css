@@ -1,0 +1,143 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.main-container {
+  height: 100dvh;
+  width: 100dvw;
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.side-bar {
+  flex: 0.3;
+  overflow-y: scroll;
+}
+
+.card.side-bar {
+  display: flex;
+  flex-direction: column;
+}
+.list-header {
+  flex-shrink: 0;
+}
+.truck-list-group-container {
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.truck-list-name {
+  font-size: 0.8rem;
+}
+
+.truck-list-number {
+  font-size: 0.9rem;
+}
+
+.truck-list {
+  height: 3rem;
+  width: 100%;
+  /* background-color: brown; */
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  color: white;
+  /* border-bottom: 2px solid red; */
+}
+
+.shipping-categories {
+  height: 18%;
+}
+
+.tracking-status-container {
+  height: 4rem;
+}
+
+.tracking-status-icon {
+  height: 2.3rem;
+  width: 2.3rem;
+  background-color: azure;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pdf-container {
+  height: 1.8rem;
+  width: 1.8rem;
+  background-color: azure;
+  border: 1px solid rgb(82, 94, 94);
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.download-text {
+  font-size: 0.9rem;
+}
+
+.download-document-title {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.category {
+  gap: 0.3rem;
+}
+
+.category-detail {
+  font-size: 0.9rem;
+}
+
+.categories-id {
+  font-size: 0.85rem;
+}
+
+.shipping-categories-icon {
+  height: 2.2rem;
+  width: 2.2rem;
+  border-radius: 0.4rem;
+}
+
+.map-overview-container {
+  height: 55%;
+}
+
+.tracking-document-container {
+  height: 36%;
+}
+
+.truck-list-details-header {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  /* border: 2px solid white; */
+}
+
+.truck-list-details-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.truck-list-image {
+  height: 3rem;
+  width: 3.8rem;
+  border-radius: 100rem;
+  background-color: cornsilk;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
