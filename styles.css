@@ -2,21 +2,85 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-/* #map {
-  height: 400px;
-  width: 100%;
-} */
-
 #map {
   height: 100%;
 }
 
 .main-container {
-  height: 100dvh;
-  width: 100dvw;
+  height: auto;
+  width: 100%;
   padding: 1rem;
   display: flex;
   gap: 1rem;
+  /* padding-bottom: 2rem; */
+}
+
+.document-related {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 5rem;
+}
+
+@media (min-width: 62rem) {
+  .document-related {
+    width: 32%;
+    height: 100%;
+  }
+
+  .main-container {
+    height: 100dvh;
+    width: 100dvw;
+    padding: 0.5rem;
+  }
+}
+
+.shipping-categories {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .shipping-categories {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .shipping-categories {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.progress-bar {
+  transition: width 0.4s ease;
+}
+
+.tracking-status-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.tracking-status-main-container {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .tracking-status-container {
+    flex-direction: row;
+    /* justify-content: space-between; */
+  }
+
+  .tracking-status-main-container {
+    flex-direction: row;
+  }
 }
 
 .main-content {
@@ -35,9 +99,11 @@ body {
   display: flex;
   flex-direction: column;
 }
+
 .list-header {
   flex-shrink: 0;
 }
+
 .truck-list-group-container {
   flex-grow: 1;
   overflow-y: auto;
@@ -60,14 +126,6 @@ body {
   gap: 0.7rem;
   color: white;
   /* border-bottom: 2px solid red; */
-}
-
-.shipping-categories {
-  height: 18%;
-}
-
-.tracking-status-container {
-  height: 4rem;
 }
 
 .tracking-status-icon {
@@ -119,7 +177,7 @@ body {
 }
 
 .map-overview-container {
-  height: 55%;
+  height: 30rem;
 }
 
 .tracking-document-container {

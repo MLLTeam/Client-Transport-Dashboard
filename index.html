@@ -25,7 +25,7 @@
 
   <body class="bg-secondary-subtle">
     <div class="main-container">
-      <div class="card side-bar text-white d-flex rounded-3">
+      <div class="card side-bar text-white rounded-3 d-none d-lg-flex">
         <div class="list-group list-group-flush">
           <div class="list-group-item d-flex flex-column gap-2">
             <div class="fw-medium">All Shipping</div>
@@ -460,23 +460,20 @@
       </div>
 
       <div
-        class="main-content text-white d-flex align-items-center justify-content-center"
+        class="main-content text-white d-flex flex-column align-items-center justify-content-center"
       >
-        <div class="w-100 d-flex gap-3 shipping-categories">
-          <div class="w-25 rounded-2 card px-3 py-2">
+        <div class="w-100 shipping-categories">
+          <div class="rounded-2 card px-3 py-2">
             <div class="h-100 d-flex flex-column category">
               <div class="text-secondary categories-id">Shipping ID</div>
-
               <div class="d-flex align-items-center gap-2">
                 <div
                   class="bg-danger shipping-categories-icon d-flex justify-content-center align-items-center"
                 >
                   <i class="las la-archive fs-3 text-white"></i>
                 </div>
-
                 <div class="fw-medium fs-6 text-body-emphasis">#E138712</div>
               </div>
-
               <div class="flex gap-3">
                 <span class="fw-medium text-success category-detail"
                   >Details Cargo</span
@@ -486,20 +483,17 @@
             </div>
           </div>
 
-          <div class="w-25 rounded-2 card px-3 py-2">
+          <div class="rounded-2 card px-3 py-2">
             <div class="h-100 d-flex flex-column category">
               <div class="text-secondary categories-id">Load Categories</div>
-
               <div class="d-flex align-items-center gap-2">
                 <div
                   class="bg-success shipping-categories-icon d-flex justify-content-center align-items-center"
                 >
                   <i class="las la-boxes fs-3 text-white"></i>
                 </div>
-
                 <div class="fw-medium fs-6 text-body-emphasis">Electronics</div>
               </div>
-
               <div class="flex gap-3">
                 <span class="fw-medium text-success category-detail"
                   >Details Cargo</span
@@ -509,22 +503,19 @@
             </div>
           </div>
 
-          <div class="w-25 rounded-2 card px-3 py-2">
+          <div class="rounded-2 card px-3 py-2">
             <div class="h-100 d-flex flex-column category">
               <div class="text-secondary categories-id">Truck's Driver</div>
-
               <div class="d-flex align-items-center gap-2">
                 <div
                   class="bg-info shipping-categories-icon d-flex justify-content-center align-items-center"
                 >
                   <i class="las la-user fs-3 text-white"></i>
                 </div>
-
                 <div class="fw-medium fs-6 text-body-emphasis">
                   Jackson Cole
                 </div>
               </div>
-
               <div class="flex gap-3">
                 <span class="fw-medium text-success category-detail"
                   >Details Cargo</span
@@ -534,10 +525,9 @@
             </div>
           </div>
 
-          <div class="w-25 rounded-2 card px-3 py-2">
+          <div class="rounded-2 card px-3 py-2">
             <div class="h-100 d-flex flex-column category">
               <div class="text-secondary categories-id">Truck's Info</div>
-
               <div class="d-flex align-items-center gap-2">
                 <div
                   class="bg-warning shipping-categories-icon d-flex justify-content-center align-items-center"
@@ -546,7 +536,6 @@
                 </div>
                 <div class="fw-medium fs-6 text-body-emphasis">MAN TGX</div>
               </div>
-
               <div class="flex gap-3">
                 <span class="fw-medium text-success category-detail"
                   >Details Cargo</span
@@ -556,8 +545,9 @@
             </div>
           </div>
         </div>
+
         <!-- Map -->
-        <div class="w-100 bg-primary map-overview-container">
+        <div class="w-100 bg-primary border-2 map-overview-container">
           <!-- <gmp-map
             center="6.6745,-1.5716"
             zoom="7"
@@ -568,72 +558,66 @@
           <div id="map"></div>
         </div>
 
-        <div class="w-100 d-flex gap-3 tracking-document-container">
-          <div class="card w-75">
-            <div class="h-50 p-3">
+        <!-- tracking document container -->
+        <div
+          class="w-100 d-flex flex-column gap-3 flex-lg-row tracking-document-container"
+        >
+          <div class="card w-100 w-lg-75 h-auto">
+            <div class="tracking-details-section p-3">
               <div class="fw-medium fs-5">Tracking Details</div>
 
-              <div class="d-flex gap-2 mt-2">
+              <div class="d-flex gap-2 tracking-status-main-container mt-2">
                 <div class="w-100 tracking-status-container">
-                  <div class="d-flex align-items-center gap-2">
-                    <div class="border border-primary tracking-status-icon">
-                      <i class="las la-clock fs-4 fw-bold"></i>
-                    </div>
-
-                    <div>
-                      <span class="fw-medium">10:23pm (21/12/23)</span>
-                      <div
-                        class="text-primary-emphasis"
-                        style="font-size: 0.8rem"
-                      >
-                        Estimated Arrival Time
-                      </div>
+                  <div class="border border-primary tracking-status-icon">
+                    <i class="las la-clock fs-4 fw-bold"></i>
+                  </div>
+                  <div>
+                    <span class="fw-medium">10:23pm (21/12/23)</span>
+                    <div
+                      class="text-primary-emphasis"
+                      style="font-size: 0.8rem"
+                    >
+                      Estimated Arrival Time
                     </div>
                   </div>
                 </div>
 
                 <div class="w-100 tracking-status-container">
-                  <div class="d-flex align-items-center gap-2">
-                    <div class="border border-primary tracking-status-icon">
-                      <i class="las la-sign-in-alt fs-4 fw-bold"></i>
-                    </div>
-
-                    <div>
-                      <span class="fw-medium">In Delivery</span>
-
-                      <div
-                        class="text-primary-emphasis"
-                        style="font-size: 0.8rem"
-                      >
-                        Shipping Status
-                      </div>
+                  <div class="border border-primary tracking-status-icon">
+                    <i class="las la-sign-in-alt fs-4 fw-bold"></i>
+                  </div>
+                  <div>
+                    <span class="fw-medium">In Delivery</span>
+                    <div
+                      class="text-primary-emphasis"
+                      style="font-size: 0.8rem"
+                    >
+                      Shipping Status
                     </div>
                   </div>
                 </div>
 
                 <div class="w-100 tracking-status-container">
-                  <div class="d-flex align-items-center gap-2">
-                    <div class="border border-primary tracking-status-icon">
-                      <i class="las la-map-marker-alt fs-4 fw-bold"></i>
-                    </div>
-
-                    <div>
-                      <span class="fw-medium">87,Eggerts rd</span>
-                      <div
-                        class="text-primary-emphasis"
-                        style="font-size: 0.8rem"
-                      >
-                        Destination
-                      </div>
+                  <div class="border border-primary tracking-status-icon">
+                    <i class="las la-map-marker-alt fs-4 fw-bold"></i>
+                  </div>
+                  <div>
+                    <span class="fw-medium">87, Eggerts rd</span>
+                    <div
+                      class="text-primary-emphasis"
+                      style="font-size: 0.8rem"
+                    >
+                      Destination
                     </div>
                   </div>
                 </div>
               </div>
             </div>
 
+            <!-- Divider -->
             <div class="w-100 border mt-3"></div>
 
-            <div class="h-50 p-3">
+            <div class="stats-section p-3">
               <div class="d-flex flex-column gap-3">
                 <div class="d-flex justify-content-between">
                   <span class="fw-medium">Hidden Valley, CA</span>
@@ -655,7 +639,7 @@
           </div>
 
           <!-- Documents Related -->
-          <div class="card w-25">
+          <div class="card document-related">
             <div class="px-3 pt-3 pb-2">
               <span class="fw-medium">Documents Related</span>
             </div>
